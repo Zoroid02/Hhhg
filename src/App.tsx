@@ -9,6 +9,13 @@ import ApologyMessage from './components/ApologyMessage';
 import FinalScreen from './components/FinalScreen';
 import { playPurr, playSweetChime } from './utils/audio';
 
+// Import images as assets so Vite processes them for production build
+import landingImg from './assets/images/meow_landing_hero_1780238730219.png';
+import introImg from './assets/images/meow_sad_intro_1780238750647.png';
+import askImg from './assets/images/meow_playful_ask_1780238772167.png';
+import apologyImg from './assets/images/meow_sleepy_hug_1780238795081.png';
+import finalImg from './assets/images/meow_wave_goodbye_1780238815248.png';
+
 type Step = 'landing' | 'intro' | 'ask' | 'apology' | 'final';
 
 export default function App() {
@@ -17,11 +24,11 @@ export default function App() {
 
   // Pre-configured generated illustration asset links
   const images = {
-    landing: '/src/assets/images/meow_landing_hero_1780238730219.png',
-    intro: '/src/assets/images/meow_sad_intro_1780238750647.png',
-    ask: '/src/assets/images/meow_playful_ask_1780238772167.png',
-    apology: '/src/assets/images/meow_sleepy_hug_1780238795081.png',
-    final: '/src/assets/images/meow_wave_goodbye_1780238815248.png',
+    landing: landingImg,
+    intro: introImg,
+    ask: askImg,
+    apology: apologyImg,
+    final: finalImg,
   };
 
   const changeStep = (nextStep: Step) => {
