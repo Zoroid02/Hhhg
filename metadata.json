@@ -1,0 +1,6 @@
+{
+  "name": "Tiny Meow Sorry",
+  "description": "A beautiful mobile-first interactive cat-themed apology website with a cozy, wholesome, and soft vibe.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

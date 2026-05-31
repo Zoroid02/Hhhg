@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Fredoka", var(--font-sans);
+  
+  --color-cozy-cream: #FAF3E0;
+  --color-cozy-beige: #FFFDFC;
+  --color-cozy-pink: #FFF5F7;
+  --color-cozy-lavender: #F4F0FA;
+  --color-cozy-brown: #5D4037;
+  --color-cozy-accent: #E18B9E;
+  --color-cozy-accent-soft: #FFD1DC;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom styles for animations or backdrops */
+body {
+  background-color: #FAF3E0;
+  color: #5D4037;
+  overflow-x: hidden;
+}
+
+/* Floating animation helper */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+}
+
+.animate-cozy-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-cozy-float-reverse {
+  animation: float 5s ease-in-out infinite reverse;
+}
+
